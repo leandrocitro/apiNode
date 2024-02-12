@@ -5,6 +5,7 @@ create table if not exists users (
     email varchar,
     password varchar,
     avatar varchar null,
+    isAdmin boolean,
     created_at timestamp default current_timestamp,
     updated_at timestamp default current_timestamp
 )
