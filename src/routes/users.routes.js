@@ -24,6 +24,10 @@ usersRoutes.post("/", myMiddleware, usersController.create); //Utilizando o Midd
 
 usersRoutes.get("/", usersController.listUsers);
 
+usersRoutes.put("/:id", usersController.update);
+
+usersRoutes.delete("/:id", usersController.delete);
+
    
 
 module.exports = usersRoutes;
