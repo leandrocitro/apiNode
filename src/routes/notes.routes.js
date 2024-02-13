@@ -3,6 +3,7 @@ const { Router } = require("express");
 const NotesController = require("../controllers/NotesController");
 
 const notesRoutes = Router();
+const allNotesRoutes = Router();
 
 
 /* function myMiddleware(request, response, next) { //Criando o Middleware
@@ -24,9 +25,11 @@ notesRoutes.post("/:user_id", notesController.create);
 
 notesRoutes.get("/:id", notesController.show);
 
-notesRoutes.get("/", notesController.AllNotes);
+//allNotesRoutes.get("/", notesController.AllNotes);
 
 notesRoutes.delete("/:id", notesController.delete);
+
+notesRoutes.get("/", notesController.index);
 
 
 module.exports = notesRoutes;
