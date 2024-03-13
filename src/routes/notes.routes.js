@@ -3,7 +3,6 @@ const { Router } = require("express");
 const NotesController = require("../controllers/NotesController");
 
 const notesRoutes = Router();
-const allNotesRoutes = Router();
 
 
 /* function myMiddleware(request, response, next) { //Criando o Middleware
