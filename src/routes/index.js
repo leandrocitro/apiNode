@@ -10,10 +10,11 @@ const sessionsRouter = require("./sessions.routes");
 const routes = Router();
 
 routes.use("/users", usersRouter);
+routes.use("/sessions", sessionsRouter);
 routes.use("/notes", notesRouter);
 routes.use("/allNotes", allNotesRouter);
 routes.use("/tags", tagsRouter);
-routes.use("/sessions", sessionsRouter);
+
 
 
 
